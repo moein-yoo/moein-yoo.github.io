@@ -35,7 +35,7 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #111;
+  background-color: #0449a2;
 }
 
 section {
@@ -43,7 +43,7 @@ section {
 }
 
 footer {
-  background-color: #333;
+  background-color: #0449a2;
   color: #fff;
   text-align: center;
   padding: 10px;
