@@ -1,117 +1,400 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Personal Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moein Yousefinia - Electrical Engineering Student</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Moein Yousefinia</h1>
-    <p>Electrical Engineering Student</p>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    <li><a href="https://moein-yoo.github.io/CV.pdf" target="_blank">CV</a></li>
-    </ul>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">MY</a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="CV.pdf" target="_blank" class="nav-link cv-link">CV ↗</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Moein Yousefinia</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1 class="hero-title">Moein Yousefinia</h1>
+        <p class="hero-subtitle">Electrical Engineering Student at <span class="highlight">Sharif University of Technology</span></p>
+        <p class="hero-description">
+          Passionate about IC Design, Signal Processing, Neuroscience, and Convex Optimization. 
+          Currently researching time-vertex graph signal forecasting and hippocampal-striatal network dynamics.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">3.89</span>
+            <span class="stat-label">GPA / 4.0</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4th</span>
+            <span class="stat-label">National Rank</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">150K+</span>
+            <span class="stat-label">Applicants</span>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#research" class="btn btn-secondary">View Research</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <strong>Bachelor of Science in Electrical Engineering</strong>
-        <br>
-        Sharif University of Technology
-        <br>
-        2023 - Present
-        <br>
-        <strong>Overall Grade: </strong> 3.85/4.0 (18.86 / 20.0)
-      </li>
-      <li>
-        <strong>High School Diploma</strong>
-        <br>
-        Allame Helli <a href="http://sampad.medu.ir/">SAMPAD</a> High School
-        <br>
-        2020 - 2023
-        <br>
-        <strong>Overall Grade:</strong> 3.96/4.0 (19.68 / 20.0)
-      </li>
-    </ul>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">🎓</div>
+          <h3>Education</h3>
+          <div class="education-item">
+            <h4>B.Sc. in Electrical Engineering</h4>
+            <p class="institution">Sharif University of Technology</p>
+            <p class="date">Sept 2023 – Present</p>
+            <p class="gpa">GPA: <strong>3.89/4.0</strong> (19.17/20) | Major GPA: <strong>19.44/20</strong></p>
+          </div>
+          <div class="education-item">
+            <h4>High School Diploma (Mathematics)</h4>
+            <p class="institution">Allame Helli SAMPAD High School</p>
+            <p class="date">Sept 2020 – Jul 2023</p>
+            <p class="gpa">GPA: <strong>3.96/4.0</strong> (19.68/20)</p>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <div class="card-icon">🏆</div>
+          <h3>Honors & Awards</h3>
+          <ul class="honors-list">
+            <li>
+              <strong>4th National Rank</strong> in Iranian Universities Entrance Exam (Konkour)
+              <span class="detail">Out of 150,000 applicants</span>
+            </li>
+            <li>
+              <strong>Bronze Medal</strong> – International Junior Math Olympiad (IJMO)
+              <span class="detail">Malaysia, 2019</span>
+            </li>
+            <li>
+              <strong>Gold Medal</strong> – Singapore and Asian Schools Math Olympiad (SASMO)
+              <span class="detail">Iran, 2019</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="card-icon">🔬</div>
+          <h3>Research Interests</h3>
+          <div class="interests-tags">
+            <span class="tag">IC Design</span>
+            <span class="tag">High Frequency Antenna Design</span>
+            <span class="tag">Signal Processing</span>
+            <span class="tag">Neuroscience</span>
+            <span class="tag">Convex Optimization</span>
+            <span class="tag">Graph Theory</span>
+            <span class="tag">Solid State Devices</span>
+            <span class="tag">Electronics</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- Research Section -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Research Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">March 2026 – Present</span>
+            <h3>Time-Vertex Graph Signal Forecasting</h3>
+            <p class="supervisor">Supervisor: Prof. E. Vural</p>
+            <p class="description">Advanced research in graph signal processing with focus on forecasting techniques.</p>
+          </div>
+        </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      <img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email" style="width:20px;height:20px;">
-      Email: <a href="mailto:moein.yoo84@sharif.edu">moein.yoo84@sharif.edu</a><br>
-      <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone" style="width:20px;height:20px;">
-      Phone: <a href="tel:+989339431669">+98 933 943 16 69</a><br>
-      <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" style="width:20px;height:20px;">
-      GitHub: <a href="https://github.com/moein-yoo" target="_blank">moein-yoo</a><br>
-      <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" style="width:20px;height:20px;">
-      LinkedIn: <a href="www.linkedin.com/in/moein-yousefinia-335269284" target="_blank">moein_yoo</a>
-    </p>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">October 2025 – Present</span>
+            <h3>Convex Optimization</h3>
+            <p class="supervisor">Signal Processing & Multimedia Lab | Supervisor: Prof. A. Amini</p>
+            <p class="description">Research on optimization methods in signal processing applications.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">June 2025 – February 2026</span>
+            <h3>Hippocampal-Striatal Network Dynamics & Olfactory Data Pipeline</h3>
+            <p class="supervisor">AIRLab | Supervisor: Prof. Aghajan</p>
+            <p class="description">Extracted time-resolved θ-γ PAC on LFP data during auditory oddball task. Analyzing neural network dynamics in novelty processing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; November 2024 <a href="http://moein-yoo.github.io/">Moein Yousefinia</a></p>
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>PAC Analysis for Alzheimer's Biomarkers</h3>
+            <span class="project-date">Spring 2025</span>
+          </div>
+          <p class="project-supervisor">Supervisor: Prof. Aghajan | AIRLab</p>
+          <p class="project-description">Analysis of Phase-Amplitude Coupling on olfactory stimulation as a biomarker for Alzheimer's Disease. Signals & Systems Final Project.</p>
+          <div class="project-tags">
+            <span class="tag-small">Neuroscience</span>
+            <span class="tag-small">Signal Processing</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>MOSFET-Based Differential Amplifier Design</h3>
+            <span class="project-date">Spring 2025</span>
+          </div>
+          <p class="project-supervisor">Supervisor: Prof. Fakharzadeh</p>
+          <p class="project-description">Complete design and analysis of differential amplifier circuits using MOSFET technology. Electronics II Final Project.</p>
+          <div class="project-tags">
+            <span class="tag-small">IC Design</span>
+            <span class="tag-small">Electronics</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Decision-Making under Uncertainty</h3>
+            <span class="project-date">Fall 2024</span>
+          </div>
+          <p class="project-supervisor">Supervisor: Prof. A. Amini</p>
+          <p class="project-description">Modeling complex decision-making scenarios using Markov Models. Probability and Statistics Final Project.</p>
+          <div class="project-tags">
+            <span class="tag-small">Probability</span>
+            <span class="tag-small">Markov Models</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Noise Modeling in Biomedical Imaging</h3>
+            <span class="project-date">Fall 2024</span>
+          </div>
+          <p class="project-supervisor">Supervisor: Prof. Aghajan</p>
+          <p class="project-description">Advanced filtering techniques and noise modeling for biomedical imaging applications. Engineering Mathematics Final Project.</p>
+          <div class="project-tags">
+            <span class="tag-small">Signal Processing</span>
+            <span class="tag-small">Medical Imaging</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      
+      <div class="experience-container">
+        <div class="experience-category">
+          <h3 class="category-title">Professional Experience</h3>
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h4>Project Intern – Blockchain for 6G Network</h4>
+                <p class="company">Hamrah Academy, Mobile Communications Company of Iran (MCI)</p>
+              </div>
+              <span class="exp-date">Mar 2024 – Sep 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-category">
+          <h3 class="category-title">Teaching Experience</h3>
+          
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h4>Head Teaching Assistant</h4>
+              </div>
+            </div>
+            <ul class="exp-list">
+              <li><strong>Electronics II</strong> (Spring 2026) – Prof. Fakharzadeh, Prof. Sarvari, Prof. Medi, Prof. Fotowat</li>
+              <li><strong>Electronics I</strong> (Fall 2025) – Prof. Fakharzadeh, Prof. Sarvari, Prof. Medi</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h4>Project Head Teaching Assistant</h4>
+              </div>
+            </div>
+            <ul class="exp-list">
+              <li><strong>Object Oriented Programming</strong> (Spring 2025) – Prof. Hashemi, Dr. Arasteh, Dr. Shirali</li>
+              <li><strong>Basic Programming</strong> (Fall 2024) – Prof. Vahdat</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h4>Teaching Assistant</h4>
+              </div>
+            </div>
+            <ul class="exp-list">
+              <li>Electronics II, Electronics I, Engineering Mathematics (multiple semesters)</li>
+              <li>Engineering Probability & Statistics, Logic Circuits, Electrical Circuit & Lab</li>
+              <li>Fundamentals of Electrical and Electronic Circuits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section">
+        <h3 class="category-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Programming</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++/C</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Verilog</span>
+              <span class="skill-tag">Assembly (MIPS)</span>
+              <span class="skill-tag">R</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Engineering Software</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">MATLAB</span>
+              <span class="skill-tag">ADS</span>
+              <span class="skill-tag">HFSS</span>
+              <span class="skill-tag">COMSOL</span>
+              <span class="skill-tag">PSpice</span>
+              <span class="skill-tag">LTSpice</span>
+              <span class="skill-tag">Vivado</span>
+              <span class="skill-tag">Modelsim</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Libraries & Frameworks</h4>
+            <div class="skills-tags">
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Keras</span>
+              <span class="skill-tag">Transformers</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">JavaFX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <p class="contact-intro">I'm always open to discussing research opportunities, collaborations, or interesting projects.</p>
+        
+        <div class="contact-grid">
+          <a href="mailto:moein.yoo84@sharif.edu" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>moein.yoo84@sharif.edu</p>
+            </div>
+          </a>
+
+          <a href="tel:+989339431669" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+98 933 943 16 69</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/moein-yoo" target="_blank" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <p>moein-yoo</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/moein-yousefinia-335269284" target="_blank" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>Moein Yousefinia</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="languages">
+          <h3>Languages</h3>
+          <div class="language-tags">
+            <span class="lang-tag">Turkish – Native</span>
+            <span class="lang-tag">Persian – Native</span>
+            <span class="lang-tag">English – Professional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Moein Yousefinia. All rights reserved.</p>
+      <p class="footer-note">Designed and developed with precision</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-<style>
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
-
-  header h1 {
-    font-family: 'Georgia', serif;
-    font-size: 2.5em;
-  }
-
-  header p {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.2em;
-  }
-
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-
-  nav ul li a {
-    text-decoration: none;
-    font-family: 'Verdana', sans-serif;
-    font-size: 1em;
-  }
-
-  section h2 {
-    font-family: 'Georgia', serif;
-    font-size: 2em;
-  }
-
-  section p, section ul {
-    font-family: 'Arial', sans-serif;
-    font-size: 1em;
-  }
-
-  footer p {
-    font-family: 'Verdana', sans-serif;
-    font-size: 0.8em;
-  }
-</style>
